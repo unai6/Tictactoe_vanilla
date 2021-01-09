@@ -1,0 +1,130 @@
+.grid-container{
+  cursor: pointer;
+}
+.winner--mssg{
+  text-align: center;
+  font-size: 2em;
+}
+
+@media (min-device-width : 320px) and (max-device-width: 768px){
+  html{
+    overflow: hidden;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    position: relative;
+    left: 9%;
+    padding-top: 2em;
+}
+
+.grid-container > div {
+    background: #EDE7F6;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .players--container{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1em;
+  }
+
+  .player--0, 
+  .player--1{
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    padding: .5em 1em;
+    border-radius: 5px;
+    align-self: center;
+  }
+
+  .player--active{
+    background-color: lightgreen;
+    color: black;
+    padding: .5em 1em;
+    border-radius: 5px;
+    align-self: center;
+  }
+
+  .punctuation{
+      font-weight: 700;
+      font-size: 2em;
+  }
+
+  .no-pointer{
+    pointer-events: none;
+  }
+
+
+  .fa-times, .fa-circle{
+    font-size: 4em;
+
+  }
+}
+
+@media (min-width: 1024px){
+  /* html{
+      overflow: hidden;
+  } */
+
+  .grid-container{
+      display: grid;
+      grid-template-columns: 150px 150px 150px;
+      grid-template-rows: 150px 150px 150px;
+      position: relative;
+      left: 32.5%;
+      padding-top: 2em;
+  }
+
+  .grid-container > div {
+      background: #EDE7F6;
+      padding: 1rem;
+      text-align: center;
+      border: 1px solid black;
+    
+    }
+
+    .players--container{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1em;
+    }
+
+    .player--0, 
+    .player--1{
+      background-color: rgba(0,0,0,.8);
+      color: white;
+      padding: .5em 1em;
+      border-radius: 5px;
+      align-self: center;
+    }
+
+    .player--active{
+      background-color: lightgreen;
+      color: black;
+      padding: .5em 1em;
+      border-radius: 5px;
+      align-self: center;
+    }
+
+    .punctuation{
+        font-weight: 700;
+        font-size: 2em;
+    }
+
+    .no-pointer{
+      pointer-events: none;
+    }
+    .pointer{
+      pointer-events: auto;
+    }
+    .fa-times, .fa-circle{
+      font-size:5em;
+  
+    }
+}
+
